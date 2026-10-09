@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY . /app
 
+RUN npm install --global npm@latest
+
 RUN npm install
 
 RUN npm run build
